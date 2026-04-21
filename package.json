@@ -1,0 +1,23 @@
+{
+  "name": "pw-framework-for-pwpracticeapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sguravgit/pw-framework-for-pwPracticeApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sguravgit/pw-framework-for-pwPracticeApp/issues"
+  },
+  "homepage": "https://github.com/sguravgit/pw-framework-for-pwPracticeApp#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "dotenv": "^17.4.2"
+  }
+}
