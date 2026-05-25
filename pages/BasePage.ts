@@ -1,17 +1,13 @@
-import {Page} from '@playwright/test';
-import { LeftMenuPanelPage } from './LeftMenuPanelPage';
-
+import { Page} from '@playwright/test';
 
 export class BasePage {
     page: Page;
-    leftMenuPanel: LeftMenuPanelPage;
 
     constructor(page: Page) {
         this.page = page;
-        this.leftMenuPanel = new LeftMenuPanelPage(this.page);
     }
     
     async navigateToHomePage() {
-        await this.page.goto(process.env.BASE_URL || 'http://localhost:4200');
+        await this.page.goto(process.env.BASE_URL || 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
     }
 }
