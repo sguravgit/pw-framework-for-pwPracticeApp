@@ -40,6 +40,7 @@ const mainEnv = path.join(projectRootDir,'env', '.env');
     
 const testEnv = process.env.TEST_ENV || 'local';
 const specificEnv = path.join(projectRootDir, 'env', `.env.${testEnv}`);
+    console.log(`Using TEST_ENV=${testEnv}, loading env from ${specificEnv}`);
     if (existsSync(specificEnv)) dotenv.config({ path: specificEnv });
 
 
